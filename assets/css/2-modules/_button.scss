@@ -4,3 +4,15 @@
   color: $accent-color;
   @include hoverColor($accent-color);
 }
+
+.btn-more {
+  color: $accent-color;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  @include hoverColor($accent-color);
+
+  i {
+    margin-right: 10px;
+  }
+}

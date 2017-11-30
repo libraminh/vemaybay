@@ -14,3 +14,9 @@ a {
 body {
   @include font('Roboto');
 }
+
+.line {
+  width: 130px;
+  height: 5px;
+  background: $accent-color1;
+}

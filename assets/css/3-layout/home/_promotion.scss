@@ -1,0 +1,47 @@
+.promotion {
+  padding-top: 130px;
+
+  &-title {
+    h5 {
+      color: $text-color1;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: $accent-color;
+      @include font('Roboto Slab');
+      margin-bottom: 30px;
+    }
+  }
+
+  &-tab {
+    .wrap-tab {
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .promotion-nav {
+        a {
+          color: $text-color2;
+          font-size: 16px;
+          font-weight: 600;
+          @include hoverColor($accent-color);
+
+          &.active {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .tab-pane {
+      .btn-more {
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+    }
+  }
+}

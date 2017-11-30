@@ -29,6 +29,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.line {
+  width: 130px;
+  height: 5px;
+  background: #57e8ff;
+}
+
 /* IMPORT COMPONENTS
    ----------------------------- */
 .content .quick-search select,
@@ -83,6 +89,24 @@ input.nice-select-filter {
 
 .btn-login:hover {
   color: #05163d;
+}
+
+.btn-more {
+  color: #05163d;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn-more:hover {
+  color: #05163d;
+}
+
+.btn-more i {
+  margin-right: 10px;
 }
 
 /* IMPORT LAYOUT
@@ -174,6 +198,61 @@ input.nice-select-filter {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.promotion {
+  padding-top: 130px;
+}
+
+.promotion-title h5 {
+  color: #423f54;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.promotion-title h2 {
+  font-size: 60px;
+  color: #05163d;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 30px;
+}
+
+.promotion-tab .wrap-tab {
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.promotion-tab .wrap-tab .promotion-nav a {
+  color: #bcd0ff;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.promotion-tab .wrap-tab .promotion-nav a:hover {
+  color: #05163d;
+}
+
+.promotion-tab .wrap-tab .promotion-nav a.active {
+  color: #05163d;
+}
+
+.promotion-tab .tab-pane .btn-more {
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 /* IMPORT RESPONSIVE

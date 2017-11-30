@@ -1,0 +1,39 @@
+// section promotion
+section.promotion
+  .container
+    .promotion-title
+      h5.text-uppercase cập nhật tin tức
+      h2 Khuyến mãi được yêu thích nhất.
+    |
+    |
+    .promotion-tab
+      .wrap-tab
+        .line
+        |
+        |
+        ul#myTab.nav.promotion-nav(role='tablist')
+          li.nav-item
+            a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') TẤT CẢ 
+          |   
+          li.nav-item
+            a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') KHUYẾN MÃI VÉ
+          |   
+          li.nav-item
+            a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') KHUYẾN MÃI KHÁCH SẠN
+      |
+      |
+      #myTabContent.tab-content
+        #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+          .row
+            .col-md-6
+              a(href="#"): img.w-100(src="assets/img/home/promotion/promotion_03.png", alt="")
+            .col-md-6
+              a(href="#"): img.w-100(src="assets/img/home/promotion/promotion_05.png", alt="")
+            a.btn.btn-more.text-uppercase(href="#") 
+              i.fa.fa-refresh(aria-hidden='true')
+              | XEM THÊM
+
+        |   
+        #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab') ...
+        |   
+        #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') ...

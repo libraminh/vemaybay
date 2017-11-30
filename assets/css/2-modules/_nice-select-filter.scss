@@ -1,0 +1,40 @@
+   .content .quick-search select,
+   input[type="text"],
+   input[type="email"],
+   input[type="number"],
+   input[type="password"], button {
+       height: 45px!important;
+   }
+
+   /* Nice Select override */
+
+   .nice-select {
+       width: 100%!important;
+       height: 45px!important;
+       line-height: 34px;
+   }
+
+   .nice-select .list {
+       width: 100%;
+       max-height: 240px;
+       overflow-y: auto;
+       /*-webkit-overflow-scrolling: touch;*/
+       margin-right: 10px;
+       box-shadow: 0 2px 5px #aaa;
+       -webkit-box-shadow: 0 2px 5px #aaa;
+       -moz-box-shadow: 0 2px 5px #aaa;
+       -o-box-shadow: 0 2px 5px #aaa;
+   }
+   .nice-select .list li {
+       padding: 0 20px;
+       border-color: transparent;
+   }
+
+   input.nice-select-filter {
+       position: absolute;
+       z-index: 100;
+       width: 100%;
+       padding: 5px 10px;
+       outline: 0;
+       z-index: 9 !important;
+   }

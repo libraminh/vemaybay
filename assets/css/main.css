@@ -1,0 +1,180 @@
+/* IMPORT TOOLS
+   ----------------------------- */
+@import url(0-tools/bootstrap/bootstrap.min.css);
+@import url(0-tools/nice-select/nice-select.css);
+@import url(0-tools/chosen-js/chosen.min.css);
+@import url(0-tools/font-awesome/css/font-awesome.min.css);
+@import url(0-tools/animate.css);
+@import url(0-tools/owl-carousel/owl.carousel.min.css);
+@import url(0-tools/owl-carousel/owl.theme.default.css);
+@import url(0-tools/lightbox/magnific-popup.css);
+@import url(0-tools/hover-direction/style.css);
+/* IMPORT BASE
+   ----------------------------- */
+/* MIXIN
+   ----------------------------- */
+/* GLOBAL COLOR */
+/* TEXT COLOR */
+/* GLOBAL CSS
+   ----------------------------- */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* IMPORT COMPONENTS
+   ----------------------------- */
+.content .quick-search select,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"], button {
+  height: 45px !important;
+}
+
+/* Nice Select override */
+.nice-select {
+  width: 100% !important;
+  height: 45px !important;
+  line-height: 34px;
+}
+
+.nice-select .list {
+  width: 100%;
+  max-height: 240px;
+  overflow-y: auto;
+  /*-webkit-overflow-scrolling: touch;*/
+  margin-right: 10px;
+  box-shadow: 0 2px 5px #aaa;
+  -webkit-box-shadow: 0 2px 5px #aaa;
+  -moz-box-shadow: 0 2px 5px #aaa;
+  -o-box-shadow: 0 2px 5px #aaa;
+}
+
+.nice-select .list li {
+  padding: 0 20px;
+  border-color: transparent;
+}
+
+input.nice-select-filter {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  padding: 5px 10px;
+  outline: 0;
+  z-index: 9 !important;
+}
+
+/* CREATE BUTTON */
+.btn-login {
+  font-size: 14px;
+  color: #05163d;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn-login:hover {
+  color: #05163d;
+}
+
+/* IMPORT LAYOUT
+   ----------------------------- */
+/* Home */
+.header .main-nav {
+  background: pink !important;
+  padding: 0;
+}
+
+.header .main-nav .navbar-nav {
+  margin-right: 230px;
+}
+
+.header .main-nav .navbar-nav li.active a {
+  color: #05163d;
+  border-bottom: 5px solid #05163d;
+}
+
+.header .main-nav .navbar-nav li:last-child a {
+  margin-right: 0;
+}
+
+.header .main-nav .navbar-nav a {
+  font-size: 16px;
+  color: #8fb8f0;
+  letter-spacing: 1px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 0;
+  margin-right: 50px;
+  line-height: 65px;
+  border-bottom: 5px solid transparent;
+}
+
+.header .main-nav .navbar-nav a:hover {
+  color: #05163d;
+}
+
+.header .main-nav .navbar-nav a:hover {
+  border-color: #05163d;
+}
+
+.header .main-nav .search-form .wrap-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-right: 30px;
+}
+
+.header .main-nav .search-form .wrap-form .form-control {
+  width: 250px;
+  border: 1px solid #05163d;
+  border-radius: 50px;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: #05163d;
+  color: #05163d;
+  /* Chrome/Opera/Safari */
+  /* Firefox 19+ */
+  /* IE 10+ */
+  /* Firefox 18- */
+}
+
+.header .main-nav .search-form .wrap-form .form-control::-webkit-input-placeholder {
+  color: #05163d;
+}
+
+.header .main-nav .search-form .wrap-form .form-control::-moz-placeholder {
+  color: #05163d;
+}
+
+.header .main-nav .search-form .wrap-form .form-control:-ms-input-placeholder {
+  color: #05163d;
+}
+
+.header .main-nav .search-form .wrap-form .form-control:-moz-placeholder {
+  color: #05163d;
+}
+
+.header .main-nav .search-form .wrap-form i {
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* IMPORT RESPONSIVE
+   ----------------------------- */

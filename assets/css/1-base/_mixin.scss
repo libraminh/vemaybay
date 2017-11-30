@@ -1,0 +1,38 @@
+/* MIXIN
+   ----------------------------- */
+
+@mixin font($font) {
+  font-family: $font, sans-serif;
+}
+
+@mixin hoverColor ($color) {
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin placeholderColor($color) {
+  color: $color;
+
+  /* Chrome/Opera/Safari */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  /* Firefox 19+ */
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  /* IE 10+ */
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  /* Firefox 18- */
+  &:-moz-placeholder  {
+    color: $color;
+  }
+}

@@ -1,0 +1,59 @@
+.news {
+  padding-top: 130px;
+
+  h5 {
+    color: $text-color1;
+    font-size: 16px;
+    margin-bottom: 160px;
+  }
+
+  .line {
+    margin-bottom: 100px;
+  }
+
+  .news-wrap {
+    position: relative;
+
+    img {
+      border-radius: 2px;
+    }
+
+    .news-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: -moz-linear-gradient(90deg, rgba(27,49,98,1) 0%, rgba(0,127,127,0) 99%, rgba(0,128,128,0) 100%); /* ff3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,0)), color-stop(1%, rgba(0,127,127,0)), color-stop(100%, rgba(27,49,98,1))); /* safari4+,chrome */
+      background: -webkit-linear-gradient(90deg, rgba(27,49,98,1) 0%, rgba(0,127,127,0) 99%, rgba(0,128,128,0) 100%); /* safari5.1+,chrome10+ */
+      background: -o-linear-gradient(90deg, rgba(27,49,98,1) 0%, rgba(0,127,127,0) 99%, rgba(0,128,128,0) 100%); /* opera 11.10+ */
+      background: -ms-linear-gradient(90deg, rgba(27,49,98,1) 0%, rgba(0,127,127,0) 99%, rgba(0,128,128,0) 100%); /* ie10+ */
+      background: linear-gradient(0deg, rgba(27,49,98,1) 0%, rgba(0,127,127,0) 99%, rgba(0,128,128,0) 100%); /* w3c */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#1b3162',GradientType=0 ); /* ie6-9 */
+    }
+
+    .news-content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 45px;
+
+      a {
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 48px;
+        @include font('Roboto Slab');
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        color: $white-color;
+      }
+    }
+  }
+}

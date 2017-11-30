@@ -10,6 +10,8 @@
   font-size: 16px;
   font-weight: 600;
   display: inline-block;
+  margin: 0 auto;
+  margin-top: 40px;
   @include hoverColor($accent-color);
 
   i {

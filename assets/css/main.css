@@ -357,6 +357,10 @@ input.nice-select-filter {
   color: #ffffff;
 }
 
+.video {
+  padding-top: 130px;
+}
+
 .video .line {
   margin: 50px 0 50px 0;
 }
@@ -385,6 +389,75 @@ input.nice-select-filter {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.pay #pay-tab .card {
+  margin-bottom: 30px;
+  border: none !important;
+  padding: 20px 0 20px 80px;
+}
+
+.pay #pay-tab .card .line {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  display: none;
+}
+
+.pay #pay-tab .card-header {
+  border-radius: 2px;
+  background: #ffffff;
+  border: none !important;
+  margin-bottom: 20px;
+}
+
+.pay #pay-tab .card-header a {
+  font-size: 28px;
+  color: #05163d;
+  font-family: "Roboto Slab", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pay #pay-tab .card-header a i {
+  color: #57e8ff;
+  font-size: 22px;
+}
+
+.pay #pay-tab .card-header a .fa-close {
+  color: #ed1c35;
+}
+
+.pay #pay-tab .card-body p {
+  color: #9a98a0;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.pay #pay-tab .card-body strong {
+  color: #05163d;
+}
+
+.pay #pay-tab .card-body .text-accent {
+  color: #d0262a;
+  font-weight: 600;
 }
 
 /* IMPORT RESPONSIVE

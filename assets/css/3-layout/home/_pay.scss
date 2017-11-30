@@ -1,0 +1,61 @@
+.pay {
+  #pay-tab {
+    .card {
+      margin-bottom: 30px;
+      border: none !important;
+      padding: 20px 0 20px 80px;
+
+      .line {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(90deg);
+        transform-origin: left;
+        display: none;
+      }
+    }
+
+    .card-header {
+      border-radius: 2px;
+      background: $white-color;
+      border: none !important;
+      margin-bottom: 20px;
+
+      a {
+        font-size: 28px;
+        color: $accent-color;
+        @include font('Roboto Slab');
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          color: $accent-color1;
+          font-size: 22px;
+        }
+
+        .fa-close {
+          color: #ed1c35;
+        }
+      }
+    }
+
+    .card-body {
+      p {
+        color: $text-color4;
+        font-size: 15px;
+        line-height: 26px;
+      }
+
+      strong {
+        color: $accent-color;
+      }
+
+      .text-accent {
+        color: $text-color5;
+        font-weight: 600;
+      }
+    }
+  }
+}

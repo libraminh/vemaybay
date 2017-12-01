@@ -37,3 +37,22 @@
 
   }
 }
+
+.btn-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 60px;
+  border-radius: 50px;
+  background: $accent-color1;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $white-color;
+  @include hoverColor($white-color);
+
+  &:hover {
+    background: darken($accent-color1, 15%);
+  }
+}

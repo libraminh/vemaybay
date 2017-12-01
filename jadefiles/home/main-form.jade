@@ -39,53 +39,49 @@ section.main-form
               option(value='25') B&#x1EAF;c Giang
       |
       |
-      .row
+      .row.form-calendar
         .col-md-3
-          span: i.fa.fa-calendar(aria-hidden='true')
-          input#txtDepartureDate.TextBox(name='ctl00$MainContent$uclSearchBox$txtDepartureDate', type='text', value='27/10/2017', autocomplete='off')
+          .form-group
+            span: i.fa.fa-calendar(aria-hidden='true')
+            input#txtDepartureDate.form-control.TextBox(name='ctl00$MainContent$uclSearchBox$txtDepartureDate', type='text', value='27/10/2017', autocomplete='off')
         |
         |
         .col-md-3
-          span: i.fa.fa-calendar(aria-hidden='true')
-          input#txtReturnDate.TextBox(name='ctl00$MainContent$uclSearchBox$txtReturnDate', type='text', value='30/10/2017', autocomplete='off')
+          .form-group
+            span: i.fa.fa-calendar(aria-hidden='true')
+            input#txtReturnDate.form-control.TextBox(name='ctl00$MainContent$uclSearchBox$txtReturnDate', type='text', value='30/10/2017', autocomplete='off')
         |
         |
         .col-md-2
-          select.form-control
-            option(data-display='Select') Nothing
-            |   
-            option(value='1') Some option
-            |   
-            option(value='2') Another option
-            |   
-            option(value='3', disabled='') A disabled option
-            |   
-            option(value='4') Potato
+          .form-group
+            span.ticket Người lớn
+            select.form-control
+              option(data-display='1') 1
+              |   
+              option(value='2') 2
+              |   
+              option(value='4') 3
         |
         |
         .col-md-2
-          select.form-control
-            option(data-display='Select') Nothing
-            |   
-            option(value='1') Some option
-            |   
-            option(value='2') Another option
-            |   
-            option(value='3', disabled='') A disabled option
-            |   
-            option(value='4') Potato
+          .form-group
+            span.ticket Trẻ em
+            select.form-control
+              option(data-display='0') 0
+              |   
+              option(value='1') 1
+              |   
+              option(value='2') 2
         |
         |
         .col-md-2
-          select.form-control
-            option(data-display='Select') Nothing
-            |   
-            option(value='1') Some option
-            |   
-            option(value='2') Another option
-            |   
-            option(value='3', disabled='') A disabled option
-            |   
-            option(value='4') Potato
+          .form-group
+            span.ticket Em bé
+            select.form-control
+              option(data-display='0') 0
+              |   
+              option(value='1') 1
+              |   
+              option(value='2') 2
     
     

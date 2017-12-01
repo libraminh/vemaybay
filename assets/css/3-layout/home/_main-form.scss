@@ -61,4 +61,50 @@
     }
   }
 
+  .form-calendar {
+    margin-top: 15px;
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      background: $white-color;
+      padding: 7px 20px;
+      position: relative;
+
+      i {
+        font-size: 20px;
+      }
+
+      .form-control {
+        border: none !important;
+        border-radius: 0 !important;
+      }
+    }
+
+    .ticket {
+      font-size: 16px;
+      color: $accent-color1;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .nice-select {
+      border-radius: 0 !important;
+      // height: 60px !important;
+      line-height: 30px !important;
+
+      .current {
+        margin-left: -20px;
+        font-size: 27px;
+        font-weight: 600;
+        color: $accent-color;
+      }
+    }
+  }
+
 }

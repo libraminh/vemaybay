@@ -52,12 +52,25 @@
         font-weight: 600;
 
         .list {
+          z-index: 100;
 
           li {
             font-size: 16px;
           }
         }
       }
+    }
+  }
+
+  .exchange {
+    display: flex;
+    align-items: center;
+
+    i {
+      cursor: pointer;
+      margin-top: -10px;
+      color: $white-color;
+      font-size: 22px;
     }
   }
 
@@ -72,6 +85,7 @@
       position: relative;
 
       i {
+        color: $accent-color;
         font-size: 20px;
       }
 
@@ -94,9 +108,15 @@
     }
 
     .nice-select {
-      border-radius: 0 !important;
-      // height: 60px !important;
+      border-radius: 2px !important;
       line-height: 30px !important;
+
+      .list {
+        width: 100%;
+        li {
+          font-size: 16px;
+        }
+      }
 
       .current {
         margin-left: -20px;

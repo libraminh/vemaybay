@@ -646,8 +646,30 @@ input.nice-select-filter {
   font-weight: 600;
 }
 
+.main-form .wrap-from .form-group .form-control .list {
+  z-index: 100;
+}
+
 .main-form .wrap-from .form-group .form-control .list li {
   font-size: 16px;
+}
+
+.main-form .exchange {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-form .exchange i {
+  cursor: pointer;
+  margin-top: -10px;
+  color: #ffffff;
+  font-size: 22px;
 }
 
 .main-form .form-calendar {
@@ -669,6 +691,7 @@ input.nice-select-filter {
 }
 
 .main-form .form-calendar .form-group i {
+  color: #05163d;
   font-size: 20px;
 }
 
@@ -692,8 +715,16 @@ input.nice-select-filter {
 }
 
 .main-form .form-calendar .nice-select {
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   line-height: 30px !important;
+}
+
+.main-form .form-calendar .nice-select .list {
+  width: 100%;
+}
+
+.main-form .form-calendar .nice-select .list li {
+  font-size: 16px;
 }
 
 .main-form .form-calendar .nice-select .current {

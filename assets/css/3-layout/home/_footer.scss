@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 80px;
+
+  h3 {
+    @include font('Roboto Slab');
+    font-size: 20px;
+    color: $accent-color;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  p {
+    color: $text-color7;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .wrap-social {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      font-size: 27px;
+      color: $accent-color;
+    }
+  }
+
+  .footer-wrap {
+    padding-bottom: 60px;
+  }
+
+  .footer-copyright {
+    border-top: 1px solid $accent-color1;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+}

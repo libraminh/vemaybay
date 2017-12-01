@@ -27,13 +27,16 @@ a:hover {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #f6f8ff;
 }
 
 .line {
   width: 130px;
   height: 5px;
   background: #57e8ff;
+}
+
+.show-line {
+  opacity: 1 !important;
 }
 
 /* IMPORT COMPONENTS
@@ -239,6 +242,7 @@ input.nice-select-filter {
 
 .promotion {
   padding-top: 130px;
+  background: #f6f8ff;
 }
 
 .promotion-title h5 {
@@ -289,6 +293,7 @@ input.nice-select-filter {
 
 .news {
   padding-top: 130px;
+  background: #f6f8ff;
 }
 
 .news h5 {
@@ -391,6 +396,20 @@ input.nice-select-filter {
   transform: translate(-50%, -50%);
 }
 
+.pay {
+  background: url("../img/home/pay/pay-bg.png") no-repeat center;
+  background-size: cover;
+  background-color: #f6f8ff;
+  padding-bottom: 160px;
+  position: relative;
+}
+
+.pay .lace {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .pay #pay-tab .card {
   margin-bottom: 30px;
   border: none !important;
@@ -408,14 +427,17 @@ input.nice-select-filter {
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 90px !important;
 }
 
 .pay #pay-tab .card-header {
   border-radius: 2px;
   background: #ffffff;
   border: none !important;
-  margin-bottom: 20px;
 }
 
 .pay #pay-tab .card-header a {
@@ -443,6 +465,10 @@ input.nice-select-filter {
 
 .pay #pay-tab .card-header a .fa-close {
   color: #ed1c35;
+}
+
+.pay #pay-tab .card-body {
+  margin-top: 20px;
 }
 
 .pay #pay-tab .card-body p {

@@ -13,11 +13,14 @@ a {
 
 body {
   @include font('Roboto');
-  background: #f6f8ff;
 }
 
 .line {
   width: 130px;
   height: 5px;
   background: $accent-color1;
+}
+
+.show-line {
+  opacity: 1 !important;
 }

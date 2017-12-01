@@ -1,0 +1,91 @@
+// section main-form
+section.main-form
+  .owl-carousel.owl-theme.form-carousel
+    .item
+      img.w-100(src="assets/img/home/form/form-bg.jpg", alt="")
+  |
+  |
+  .form-container
+    .container
+      .wrap-from
+        input#lang(type='hidden', value='vi-VN')
+        .form-group
+          span FROM
+          .wrap
+            input.form-control(type="text" placeholder="Nhập thành phố hoặc sân bay").nice-select-filter
+            select.form-control(name='location', data-placeholder='Nhập thành phố hoặc sân bay', style='width:100%;', tabindex='2')
+              option(value='0') Nhập thành phố hoặc sân bay
+              option(value='47') An Giang
+              |                                                                                     
+              option(value='20') B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u
+              |                                                                                     
+              option(value='62') B&#x1EA1;c Li&ecirc;u
+              |                                                                                     
+              option(value='25') B&#x1EAF;c Giang
+        |
+        |
+        .form-group
+          span TO
+          .wrap
+            input.form-control(type="text" placeholder="Nhập thành phố hoặc sân bay").nice-select-filter
+            select.form-control(name='location', data-placeholder='Nhập thành phố hoặc sân bay', style='width:100%;', tabindex='2')
+              option(value='0') Nhập thành phố hoặc sân bay
+              option(value='47') An Giang
+              |                                                                                     
+              option(value='20') B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u
+              |                                                                                     
+              option(value='62') B&#x1EA1;c Li&ecirc;u
+              |                                                                                     
+              option(value='25') B&#x1EAF;c Giang
+      |
+      |
+      .row
+        .col-md-3
+          span: i.fa.fa-calendar(aria-hidden='true')
+          input#txtDepartureDate.TextBox(name='ctl00$MainContent$uclSearchBox$txtDepartureDate', type='text', value='27/10/2017', autocomplete='off')
+        |
+        |
+        .col-md-3
+          span: i.fa.fa-calendar(aria-hidden='true')
+          input#txtReturnDate.TextBox(name='ctl00$MainContent$uclSearchBox$txtReturnDate', type='text', value='30/10/2017', autocomplete='off')
+        |
+        |
+        .col-md-2
+          select.form-control
+            option(data-display='Select') Nothing
+            |   
+            option(value='1') Some option
+            |   
+            option(value='2') Another option
+            |   
+            option(value='3', disabled='') A disabled option
+            |   
+            option(value='4') Potato
+        |
+        |
+        .col-md-2
+          select.form-control
+            option(data-display='Select') Nothing
+            |   
+            option(value='1') Some option
+            |   
+            option(value='2') Another option
+            |   
+            option(value='3', disabled='') A disabled option
+            |   
+            option(value='4') Potato
+        |
+        |
+        .col-md-2
+          select.form-control
+            option(data-display='Select') Nothing
+            |   
+            option(value='1') Some option
+            |   
+            option(value='2') Another option
+            |   
+            option(value='3', disabled='') A disabled option
+            |   
+            option(value='4') Potato
+    
+    

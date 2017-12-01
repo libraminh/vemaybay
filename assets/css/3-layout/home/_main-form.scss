@@ -1,0 +1,64 @@
+.main-form {
+  position: relative;
+
+  .item {
+    img {
+      filter: blur(3px);
+    }
+  }
+
+  .form-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .wrap-from {
+    display: flex;
+    justify-content: space-between;
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      background: $white-color;
+      padding: 15px 20px;
+      width: 520px;
+      height: 80px;
+
+      & > span {
+        font-weight: 600;
+        font-size: 16px;
+        color: $accent-color;
+        margin-right: 30px;
+      }
+
+      .wrap {
+        width: 100%;
+        position: relative;
+      }
+
+      .form-control {
+        border: none !important;
+        font-size: 27px;
+        color: #666d83;
+        font-weight: 600;
+
+        .list {
+
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}

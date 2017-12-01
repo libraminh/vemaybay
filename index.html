@@ -57,77 +57,164 @@
         
         <div class="form-container">
           <div class="container">
-            <div class="wrap-from">
-              <input id="lang" type="hidden" value="vi-VN">
-              <div class="form-group"><span>FROM</span>
-                <div class="wrap">
-                  <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
-                  <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
-                    <option value="0">Nhập thành phố hoặc sân bay</option>
-                    <option value="47">An Giang</option>                                                                                    
-                    <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
-                    <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
-                    <option value="25">B&#x1EAF;c Giang</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="exchange"><i class="fa fa-exchange" aria-hidden="true"></i></div>
-              
-              <div class="form-group"><span>TO</span>
-                <div class="wrap">
-                  <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
-                  <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
-                    <option value="0">Nhập thành phố hoặc sân bay</option>
-                    <option value="47">An Giang</option>                                                                                    
-                    <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
-                    <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
-                    <option value="25">B&#x1EAF;c Giang</option>
-                  </select>
-                </div>
-              </div>
+            <div class="form-nav">
+              <ul class="nav list-unstyled" role="tablist">
+                <li><a class="btn-form active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"><i class="fa fa-plane" aria-hidden="true"></i>TÌM VÉ MÁY BAY</a></li>
+                <li><a class="btn-form" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"><i class="fa fa-building-o" aria-hidden="true"></i>TÌM KHÁCH SẠN</a></li>
+              </ul>
             </div>
             
-            <div class="row form-calendar">
-              <div class="col-md-3">
-                <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  <input class="form-control TextBox" id="txtDepartureDate" name="ctl00$MainContent$uclSearchBox$txtDepartureDate" type="text" value="27/10/2017" autocomplete="off">
+            <div class="tab-content">
+              <div class="form-search-wrap tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
+                <div class="wrap-from">
+                  <input id="lang" type="hidden" value="vi-VN">
+                  <div class="form-group"><span>FROM</span>
+                    <div class="wrap">
+                      <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
+                      <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
+                        <option value="0">Nhập thành phố hoặc sân bay</option>
+                        <option value="47">An Giang</option>                                                                                    
+                        <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
+                        <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
+                        <option value="25">B&#x1EAF;c Giang</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="exchange"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+                  
+                  <div class="form-group"><span>TO</span>
+                    <div class="wrap">
+                      <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
+                      <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
+                        <option value="0">Nhập thành phố hoặc sân bay</option>
+                        <option value="47">An Giang</option>                                                                                    
+                        <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
+                        <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
+                        <option value="25">B&#x1EAF;c Giang</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-calendar">
+                  <div class="col-md-3">
+                    <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input class="form-control TextBox" id="txtDepartureDate" name="ctl00$MainContent$uclSearchBox$txtDepartureDate" type="text" value="27/10/2017" autocomplete="off">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                    <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input class="form-control TextBox" id="txtReturnDate" name="ctl00$MainContent$uclSearchBox$txtReturnDate" type="text" value="30/10/2017" autocomplete="off">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Người lớn</span>
+                      <select class="form-control">
+                        <option data-display="1">1</option>  
+                        <option value="2">2</option>  
+                        <option value="4">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Trẻ em</span>
+                      <select class="form-control">
+                        <option data-display="0">0</option>  
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Em bé</span>
+                      <select class="form-control">
+                        <option data-display="0">0</option>  
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
-              <div class="col-md-3">
-                <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  <input class="form-control TextBox" id="txtReturnDate" name="ctl00$MainContent$uclSearchBox$txtReturnDate" type="text" value="30/10/2017" autocomplete="off">
+              <div class="form-search-wrap tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="home-tab">
+                <div class="wrap-from">
+                  <input id="lang" type="hidden" value="vi-VN">
+                  <div class="form-group"><span>FROM</span>
+                    <div class="wrap">
+                      <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
+                      <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
+                        <option value="0">Nhập thành phố hoặc sân bay</option>
+                        <option value="47">An Giang</option>                                                                                    
+                        <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
+                        <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
+                        <option value="25">B&#x1EAF;c Giang</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="exchange"><i class="fa fa-exchange" aria-hidden="true"></i></div>
+                  
+                  <div class="form-group"><span>TO</span>
+                    <div class="wrap">
+                      <input class="form-control nice-select-filter" type="text" placeholder="Nhập thành phố hoặc sân bay">
+                      <select class="form-control" name="location" data-placeholder="Nhập thành phố hoặc sân bay" style="width:100%;" tabindex="2">
+                        <option value="0">Nhập thành phố hoặc sân bay</option>
+                        <option value="47">An Giang</option>                                                                                    
+                        <option value="20">B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u</option>                                                                                    
+                        <option value="62">B&#x1EA1;c Li&ecirc;u</option>                                                                                    
+                        <option value="25">B&#x1EAF;c Giang</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="col-md-2">
-                <div class="form-group"><span class="ticket">Người lớn</span>
-                  <select class="form-control">
-                    <option data-display="1">1</option>  
-                    <option value="2">2</option>  
-                    <option value="4">3</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="col-md-2">
-                <div class="form-group"><span class="ticket">Trẻ em</span>
-                  <select class="form-control">
-                    <option data-display="0">0</option>  
-                    <option value="1">1</option>  
-                    <option value="2">2</option>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="col-md-2">
-                <div class="form-group"><span class="ticket">Em bé</span>
-                  <select class="form-control">
-                    <option data-display="0">0</option>  
-                    <option value="1">1</option>  
-                    <option value="2">2</option>
-                  </select>
+                
+                <div class="row form-calendar">
+                  <div class="col-md-3">
+                    <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input class="form-control TextBox" id="txtDepartureDate" name="ctl00$MainContent$uclSearchBox$txtDepartureDate" type="text" value="27/10/2017" autocomplete="off">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                    <div class="form-group"><span><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input class="form-control TextBox" id="txtReturnDate" name="ctl00$MainContent$uclSearchBox$txtReturnDate" type="text" value="30/10/2017" autocomplete="off">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Người lớn</span>
+                      <select class="form-control">
+                        <option data-display="1">1</option>  
+                        <option value="2">2</option>  
+                        <option value="4">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Trẻ em</span>
+                      <select class="form-control">
+                        <option data-display="0">0</option>  
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="form-group"><span class="ticket">Em bé</span>
+                      <select class="form-control">
+                        <option data-display="0">0</option>  
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

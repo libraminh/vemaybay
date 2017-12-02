@@ -126,6 +126,21 @@
   .form-calendar {
     margin-top: 15px;
 
+    .wrap-radio {
+      display: flex;
+      margin-top: 15px;
+
+      .radio {
+        .radio-label {
+          color: $white-color;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+
     .form-group {
       display: flex;
       align-items: center;

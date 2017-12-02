@@ -1,6 +1,7 @@
 /* CREATE BUTTON */
 .btn-login {
   font-size: 14px;
+  font-weight: 600;
   color: $accent-color;
   @include hoverColor($accent-color);
 }

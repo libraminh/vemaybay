@@ -1,10 +1,11 @@
 .header {
   .main-nav {
-    background: pink !important;
+    background: $white-color !important;
     padding: 0;
 
     .navbar-nav {
       margin-right: 230px;
+
       li {
         &.active a {
           color: $accent-color;
@@ -18,6 +19,7 @@
 
       a {
         font-size: 16px;
+        font-weight: 600;
         color: $text-color;
         letter-spacing: 1px;
         @include hoverColor($accent-color);
@@ -55,6 +57,10 @@
           right: 10px;
           transform: translateY(-50%);
         }
+      }
+
+      .btn-login {
+        margin-right: 90px;
       }
     }
   }
